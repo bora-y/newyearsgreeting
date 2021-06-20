@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>謹賀新年</title>
+
+    <link rel="shortcut icon" href="https://i.pinimg.com/originals/ce/27/21/ce2721f54a6ae8cda3e5278577f157f5.jpg">
+
+    <meta property="og:image" content="https://assets.rockpapershotgun.com/images/2019/03/destiny-2-drifter-prime.jpg/RPSS/thumbnail/1920x1080/format/jpg/quality/75">
+    <meta property="og:title" content="새해복 많이 받으세요!">
+    <meta property="og:description" content="어이 거기 갬빗할래?">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Noto Serif KR', serif;
+        }
+
+        body {
+            background-color: #9b070f;
+        }
+
+        .envelope {
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+        }
+
+        .envlp-msg {
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        .lttr-close {
+            display: block;
+        }
+
+        .lttr-open {
+            display: none;
+        }
+
+        .gif {
+            background-color: darkgreen;
+
+            width: 200px;
+            height: 200px;
+
+            margin: 100px auto 0px auto;
+
+            background-image: url('https://media.giphy.com/media/WpOsxwC2Go88cChimD/giphy.gif');
+            background-size: cover;
+            background-position: center;
+
+            border-radius: 100px;
+
+            border: 3px solid violet;
+            box-shadow: 0px 0px 10px 0px thistle;
+
+        }
+
+        h1 {
+            color: thistle;
+            text-align: center;
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .mssgbox {
+            background-color: ivory;
+
+            width: 400px;
+            margin: auto;
+
+            color: brown;
+
+            padding: 30px;
+
+            font-size: 20px;
+            line-height: 30px;
+
+            box-shadow: 0px 0px 10px 0px whitesmoke;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .mssgbox {
+                width: 300px;
+                padding: 20px;
+                font-size: 15px;
+            }
+
+            .gif {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+        }
+    </style>
+
+    <script>
+
+        function open_letter() {
+            document.getElementsByClassName("lttr-close")[0].style.display = 'none'
+            document.getElementsByClassName("lttr-open")[0].style.display = 'block'
+        }
+
+        function go_gif() {
+            alert('( ͡° ͜ʖ ( ͡° ͜ʖ ( ͡° ͜ʖ ( ͡° ͜ʖ ͡°) ͜ʖ ͡°)ʖ ͡°)ʖ ͡°)ㅎ');
+            window.location.href='https://www.bungie.net/7/en/Seasons/Events/TheDawning'           
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="lttr-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envlp-msg">謹賀新年</h2>
+    </div>
+
+    <div class="lttr-open">
+        <div class="gif" onclick="go_gif()"></div>
+        <h1>2020년도 우주 평화를 수호하느라 수고가 많았다,,</h1>
+        <div class="mssgbox">
+            수호자들에게,,<br>
+            역병이 도는 와중에도 우주 평화를 지키기 위해<br>
+            올해도 열심히 노력을 했구나,,,<br>
+            사이버 세계의 평화도 중요하지만<br>
+            일단 올해는 꼭 함께 맛있는 것을 먹자,,,<br>
+            다들 새해,,, 복 많이 받으시고,,,,<br>
+            원하는 것 꼭,,, 이루길 소망합니다,,,, ^^<br>
+            <p class="from">2021.01.02 </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
